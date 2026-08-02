@@ -1,0 +1,29 @@
+# Qt Creator
+.qtcreator/
+*.user
+*.autosave
+
+# Build
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Executables
+*.exe
+*.dll
+
+# Object files
+*.o
+*.obj
+*.a
+*.lib
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
