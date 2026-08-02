@@ -5,6 +5,7 @@
 
 # Build
 build/
+build-*/
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
@@ -27,3 +28,7 @@ Makefile
 
 # Logs
 *.log
+
+# Keep data output(.csv file which is automatically created when users complete a ride)
+data/*.csv
+!data/.gitkeep
