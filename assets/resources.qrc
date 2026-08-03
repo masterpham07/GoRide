@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="icons/car.svg">../assets/icons/car.svg</file>
+        <file alias="icons/driver.svg">../assets/icons/driver.svg</file>
+        <file alias="icons/passenger.svg">../assets/icons/passenger.svg</file>
+        <file alias="icons/pickup.svg">../assets/icons/pickup.svg</file>
+        <file alias="icons/destination.svg">../assets/icons/destination.svg</file>
+        <file alias="icons/building.svg">../assets/icons/building.svg</file>
+        <file alias="icons/school.svg">../assets/icons/school.svg</file>
+        <file alias="icons/airport.svg">../assets/icons/airport.svg</file>
+        <file alias="icons/park.svg">../assets/icons/park.svg</file>
+        <file alias="icons/busStation.svg">../assets/icons/busStation.svg</file>
+        <file alias="icons/harbor.svg">../assets/icons/harbor.svg</file>
+        <file alias="icons/mall.svg">../assets/icons/mall.svg</file>
+        <file alias="icons/obstacle.svg">../assets/icons/obstacle.svg</file>
+        <file alias="styles/goride.qss">../assets/styles/goride.qss</file>
+    </qresource>
+</RCC>
