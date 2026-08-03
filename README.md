@@ -1,4 +1,4 @@
-# GoRide — Ứng dụng đặt xe công nghệ (C++ & Qt)
+﻿# GoRide — Ứng dụng đặt xe công nghệ (C++ & Qt)
 
 GoRide là bài tập lớn môn C++, mô phỏng nền tảng đặt xe công nghệ (tương tự Grab, Be, Gojek). Ứng dụng sở hữu giao diện đồ hoạ (GUI) trực quan được xây dựng bằng framework **Qt 6**, tích hợp bản đồ dạng lưới (Grid Map) mô phỏng quá trình di chuyển của tài xế và tìm đường đi tối ưu theo thời gian thực.
 
@@ -29,17 +29,13 @@ Nếu chỉ cần xem ứng dụng hoạt động mà không cài đặt môi tr
 
 ~~~text
 GoRide/
-├── assets/                 # Chứa tài nguyên giao diện (Media/Assets)
-│   ├── icons/              # Các file icon định dạng SVG (airport, car, driver...)
-│   └── styles/             # File goride.qss cấu hình CSS/Style cho giao diện
-├── docs/                   # Chứa file Word báo cáo chi tiết của dự án
-├── slides/                 # Chứa file PowerPoint thuyết trình báo cáo
-├── src/                    # Mã nguồn C++ chính của phần mềm
-│   ├── models/             # Định nghĩa các thực thể dữ liệu tĩnh (User, Place, Trip...)
-│   ├── services/           # Xử lý logic nghiệp vụ lõi (MatchingEngine, PathFinder, Payment...)
-│   ├── ui/                 # Mã nguồn giao diện Qt (MainWindow, MapWidget...)
-│   └── utils/              # Các class tiện ích hỗ trợ (đọc/ghi file CSV với FileHandler...)
+├── assets/                 # Chứa tài nguyên giao diện (Media/Assets, icons, styles...)
+├── data/                   # Thư mục lưu trữ dữ liệu cục bộ (như file lịch sử trips.csv)
+├── include/                # Chứa các file header (.h) định nghĩa cấu trúc và thư viện
+├── services/               # Xử lý logic nghiệp vụ lõi (MatchingEngine, PathFinder, Payment...)
+├── src/                    # Mã nguồn C++ chính và các thành phần giao diện (UI)
 ├── CMakeLists.txt          # File cấu hình build dự án bằng CMake
+├── .gitignore              # File cấu hình bỏ qua các file build/app không cần thiết
 └── README.md               # Tài liệu giới thiệu dự án
 ~~~
 
@@ -51,15 +47,13 @@ GoRide/
 
 ## 5. Phân công công việc nhóm
 
-Dự án được phân chia module rõ ràng, đảm bảo quy trình làm việc hiệu quả và đồng đều cho cả 5 thành viên thông qua Git/GitHub:
+Dự án được phân chia module rõ ràng, đảm bảo quy trình làm việc hiệu quả và đồng đều cho cả 5 thành viên thông qua Git/GitHub. Cụ thể trách nhiệm của từng thành viên như sau:
 
-| Thành viên | Trách nhiệm chính trong dự án |
-|:---|:---|
-| Phạm Ngọc Thắng | Tích hợp tài nguyên giao diện (UI/UX Assets, Stylesheets), kiểm thử luồng ứng dụng và viết tài liệu báo cáo kỹ thuật. |
-| Nguyễn Phương Nam | Xây dựng các lớp dữ liệu nền tảng (Data Models), chuẩn hóa luồng dữ liệu và viết tài liệu báo cáo kỹ thuật. |
-| Phạm Đan Trường | Phát triển các thuật toán và dịch vụ lõi (PathFinder, MatchingEngine, Cước phí, Dịch vụ thanh toán). |
-| Trần Minh Khôi | Phát triển Giao diện đồ hoạ chính (UI/UX), lập trình và tích hợp bản đồ trực quan (MapWidget) với framework Qt. |
-| Phan Minh Tân | Phát triển mô-đun quản lý File (FileHandler), cấu hình CMake, quản lý repository và thiết kế Slides thuyết trình. |
+*   Phạm Ngọc Thắng: Tích hợp tài nguyên giao diện (UI/UX Assets, Stylesheets), kiểm thử luồng ứng dụng và viết tài liệu báo cáo kỹ thuật.
+*   Nguyễn Phương Nam: Xây dựng các lớp dữ liệu nền tảng (Data Models), chuẩn hóa luồng dữ liệu và viết tài liệu báo cáo kỹ thuật.
+*   Phạm Đan Trường: Phát triển các thuật toán và dịch vụ lõi (PathFinder, MatchingEngine, Cước phí, Dịch vụ thanh toán).
+*   Trần Minh Khôi: Phát triển Giao diện đồ hoạ chính (UI/UX), lập trình và tích hợp bản đồ trực quan (MapWidget) với framework Qt.
+*   Phan Minh Tân: Phát triển mô-đun quản lý File (FileHandler), cấu hình CMake, quản lý repository và thiết kế Slides thuyết trình.
 
 ---
 *Chân thành cảm ơn Thầy/Cô đã dành thời gian xem xét dự án của nhóm!*
